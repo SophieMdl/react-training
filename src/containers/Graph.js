@@ -20,15 +20,15 @@ class Graph extends Component {
     }
     return result //JSON
   }
+  state = {
+    data: []
+  }
   componentDidMount() {
     fetch('./data_graph.csv')
       .then(res => res.text())
       .then(res => {
         this.setState({ data: this.csvToJson(res) })
       })
-  }
-  state = {
-    data: []
   }
   render() {
     return (

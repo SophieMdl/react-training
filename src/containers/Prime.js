@@ -56,7 +56,6 @@ class Prime extends Component {
         <h3>Rentrer un nombre :</h3>
         <form onSubmit={e => this.findPrimaryNumber(e)}>
           <Input
-            ref={input => (this.textInput = input)}
             placeholder="29"
             type="number"
             onChange={e => this.changeNumber(e)}
