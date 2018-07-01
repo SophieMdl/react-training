@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Button, List } from 'semantic-ui-react'
 const ListMusics = ({music, removeFromPlaylist, playMusic }) =>{
     return(
-      <div>
-        {music.title}
-        <button onClick={() => removeFromPlaylist(music.id)}>Remove from playlist</button>
-        <button onClick={() => playMusic(music)}>play</button>
-      </div>
+      <List.Item>
+        <div>{music.title}</div>
+        <Button size='mini' basic color='blue' onClick={() => playMusic(music)}>play</Button>
+        <Button size='mini' basic color='red' onClick={() => removeFromPlaylist(music.id)}>X</Button>
+      </List.Item>
     )
 }
 
