@@ -8,14 +8,11 @@ import AudioPlayer from '../components/AudioPlayer.js'
 
 
 class Music extends Component {
-
   state = {
     musics: musics,
     playlist: [],
     musicToPlay: undefined
   }
-
-
   addToPlaylist = id => {
     if (this.state.playlist.some(music => music.id === id)) {
       return

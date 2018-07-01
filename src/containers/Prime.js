@@ -4,7 +4,7 @@ import { Input, Button } from 'semantic-ui-react'
 class Prime extends Component {
   state = {
     inputNumber: undefined,
-    primaryNumber: '',
+    primaryNumber: undefined,
     searchHistoric: [],
   }
   changeNumber = e => {
@@ -34,7 +34,7 @@ class Prime extends Component {
     }
     const primaryNumber = arrayPrimaryNumber[inputNumber - 1]
     this.setState({
-      primaryNumber: [primaryNumber, ...this.state.primaryNumber],
+      primaryNumber: primaryNumber
     })
   }
   componentDidMount() {
@@ -50,6 +50,7 @@ class Prime extends Component {
   }
   render() {
     const state = this.state
+    const answer = <span>{state.inputNumber}<sup>ème</sup> nombre premier : {state.primaryNumber}</span>
     return (
       <div>
         <h3>Rentrer un nombre :</h3>
@@ -62,9 +63,10 @@ class Prime extends Component {
           />
           <Button primary>Ok</Button>
         </form>
-        <span>resultat : </span>{state.primaryNumber[0]}
-        <h3>Historique</h3>
-        <p>Nombres demandés</p>
+        {state.primaryNumber === undefined ? "" : answer}
+
+        <h3>Historique des recherches</h3>
+        <p>(Local storage)</p>
         {state.searchHistoric.map(number => (
           <div key={Math.random() * number}>{number}</div>
         ))}
