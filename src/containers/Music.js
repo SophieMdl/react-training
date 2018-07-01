@@ -6,7 +6,6 @@ import ListMusics from '../components/ListMusics'
 import Playlist from '../components/Playlist'
 import AudioPlayer from '../components/AudioPlayer.js'
 
-
 class Music extends Component {
   state = {
     musics: musics,
