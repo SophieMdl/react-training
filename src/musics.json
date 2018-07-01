@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title": "Suzy Lee",
+        "url": "./musics/suzy-lee.mp3"
+    },
+    {
+        "id" : 2,
+        "title": "Vikingman",
+        "url": "./musics/vikingman.mp3"
+    },
+    {
+        "id" : 3,
+        "title": "Stairway to Heaven",
+        "url": "./musics/stairway-to-heaven.mp3"
+    },
+    {
+        "id" : 4,
+        "title": "Life On Mars",
+        "url": "./musics/life-on-mars.mp3"
+    },
+    {
+        "id" : 5,
+        "title": "The White Stripes-01-Jimmy the Exploder",
+        "url": "./musics/jimmy-the-exploder.mp3"
+    }
+]
