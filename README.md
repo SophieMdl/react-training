@@ -1,4 +1,4 @@
-#Exercices de React sans Redux
+# Exercices de React sans Redux
 
 Il s’agit d’une application reactJS composée de 3 pages :
 
@@ -8,7 +8,7 @@ Il s’agit d’une application reactJS composée de 3 pages :
 
 3. Une page /graph
 
-#Page /music
+## Page /music
 Cette page est composée d’une liste de musique sous forme de tableau, d’un lecteur audio et
 d’une tableau affichant une playlist.
 
@@ -46,7 +46,7 @@ Remarque
 • Je ne noterai pas ta sélection musicale (chacun ses gouts), par contre choisi quand même des
 musiques agréables à écouter :p 
 
-#Page /prime@
+## Page /prime@
 L’objectif de cette page est de trouver le n-ième nombre premier.
 
 Cette page est composée d’un input de type number, d’un bouton valider et une zone d’affichage
@@ -57,7 +57,7 @@ Par exemple : si je mets 10 dans l’input et je valide le nombre 29 s’affiche
 Remarque :
 • Un historique des recherches pourra être un plus
 
-#Page /graph
+## Page /graph
 Nous voulons afficher de la data collectée sous forme de CSV dans un graph.
 
 L’objectif est d’afficher les courbes de crédit, débit et balance en fonction du temps.
