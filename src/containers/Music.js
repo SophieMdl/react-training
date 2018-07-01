@@ -4,7 +4,8 @@ import musics from '../musics.json'
 /*Components*/
 import ListMusics from '../components/ListMusics'
 import Playlist from '../components/Playlist'
-import AudioPlayer from '../components/AudioPlayer.js';
+import AudioPlayer from '../components/AudioPlayer.js'
+
 
 class Music extends Component {
 
@@ -13,6 +14,8 @@ class Music extends Component {
     playlist: [],
     musicToPlay: undefined
   }
+
+
   addToPlaylist = id => {
     if (this.state.playlist.some(music => music.id === id)) {
       return

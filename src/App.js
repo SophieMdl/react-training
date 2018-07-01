@@ -1,14 +1,14 @@
 /* REACT */
-import React, { Component } from 'react';
-import { Router, Link } from "@reach/router";
+import React, { Component } from 'react'
+import { Router, Link } from "@reach/router"
 import { Menu } from 'semantic-ui-react'
 /* COMPONENTS */
 import Music from './containers/Music.js'
 import Prime from './containers/Prime.js'
 import Graph from './containers/Graph.js'
 /* CSS */
-import 'semantic-ui-css/semantic.min.css';
-import './App.css';
+import 'semantic-ui-css/semantic.min.css'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -32,8 +32,8 @@ class App extends Component {
           <Graph path="/graph"/>
         </Router>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
