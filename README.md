@@ -1,4 +1,6 @@
-# Exercices de React sans Redux
+Exercices sur React réalisé en 2018
+
+# Exercices React
 
 Il s’agit d’une application reactJS composée de 3 pages :
 
